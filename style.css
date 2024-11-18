@@ -1,0 +1,164 @@
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+.navbar {
+  width: 84%;
+  margin: auto;
+}
+.navbar-brand {
+  font-weight: bold;
+  font-family: "Funnel Display", sans-seri;
+  font-size: 30px;
+}
+.navber-s {
+  background-color: transparent;
+  color: rgb(234, 46, 46);
+  font-weight: bold;
+  font-family: "Faculty Glyphic", sans-serif;
+}
+.get-button {
+  background-color: rgb(234, 46, 46);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 5px 15px;
+  margin-left: 1%;
+}
+.nav-home .nav-link {
+  color: rgb(234, 46, 46);
+}
+.nav-home .nav-link.active {
+  color: rgb(234, 46, 46);
+}
+.slide-control {
+  width: 82%;
+  margin: auto;
+}
+.bottomright {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+  background-color: black;
+  padding: 20px;
+}
+.cover-text{
+  color: rgb(124, 122, 122);
+}
+.dashed {
+  border-top: 2px dashed;
+  width: 82%;
+  margin: auto;
+}
+.heading-text {
+  width: 50%;
+  margin: auto;
+}
+.progress-bar {
+  width: 80%;
+}
+.text {
+  bottom: 20px;
+  width: 80%;
+  left: 30px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 12px;
+  right: 12px;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border:none;
+  border-radius: 5px;
+}
+
+summary::after {
+  content: "\f067"; 
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 20px;
+  margin-left: 8px;
+}
+
+details[open] summary::after {
+  content: "\f068"; 
+}
+
+details p {
+  margin: 10px 0 0;
+  padding: 10px;
+}
+.form-txt{
+  font-size: 10px;
+}
+.card-2{
+  background-color: rgb(255, 250, 240);
+}
+.card-3{
+  background-color:azure;
+}
+
+
+@media (min-width: 768px) {
+  .search-control {
+    display: none;
+  }
+  .coverimg-2{
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .image-over{
+    display: none;
+  }
+  .dashed {
+  width: 85%;
+}
+}
+@media (max-width: 768px) {
+  .navbar {
+    width: 99%;
+    margin: auto;
+  }
+  .search-icon {
+    display: none !important;
+  }
+  .slide-control{
+    width: 92%;
+  }
+  .coverimg-1{
+    display: none;
+  }
+  .bottomright {
+    position: static;
+    color: white;
+    margin-top: 10px;
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .heading-text {
+    width: 75%;
+  }
+  .text{
+    font-size: 10px;
+  }
+  .q-card{
+    width: 90%;
+  }
+  .my-footer{
+    text-align: center;
+  }
+}
+
